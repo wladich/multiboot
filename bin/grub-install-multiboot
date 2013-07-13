@@ -2,7 +2,7 @@
 root_dir=$(readlink -f `dirname $0`/..)
 # read boot_disk_id and add_modules
 . $root_dir/etc/multiboot.cfg
-modules="ext2 chain biosdisk part_msdos lvm $add_modules"
+modules="ext2 xfs chain biosdisk part_msdos lvm $add_modules"
 
 install_device=`readlink -f /dev/disk/by-id/$boot_disk_id`
 if [ ! -b $install_device ]; then
