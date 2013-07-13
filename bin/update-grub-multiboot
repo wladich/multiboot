@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+root_dir=`dirname $0`/..
+exec $root_dir/bin/grub-mkconfig-multiboot -o $root_dir/boot/grub/grub.cfg
