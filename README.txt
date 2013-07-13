@@ -4,8 +4,7 @@ multiboot
 Create two partitions:
  1. Non-FS 256 Kb size for grub installation
  2. 16 Mb for multiboot data and fake loader installations for linux
-
-   /sbin/sfdisk /dev/sdX << partitions.dump
+    /sbin/sfdisk /dev/sdX << partitions.dump
 
 make other parttions for LVM, Windows, etc
 
